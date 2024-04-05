@@ -29,7 +29,7 @@ extern "C"
     ARint msaupd, msaup2, msaitr, mseigt, msapps, msgets, mseupd;
     ARint mnaupd, mnaup2, mnaitr, mneigt, mnapps, mngets, mneupd;
     ARint mcaupd, mcaup2, mcaitr, mceigt, mcapps, mcgets, mceupd;
-  } F77NAME(debug);
+  } DEBUG_MACRO_;
 
 
 // double precision symmetric routines.
@@ -126,14 +126,14 @@ extern "C"
 
 // double precision complex routines.
 
-  void F77NAME(znaupd)(ARint *ido, char *bmat, ARint *n, const char *which,
+  void ZNAUPD_MACRO_(ARint *ido, char *bmat, ARint *n, const char *which,
                        ARint *nev, double *tol, arcomplex<double> *resid,
                        ARint *ncv, arcomplex<double> *V, ARint *ldv,
                        ARint *iparam, ARint *ipntr, arcomplex<double> *workd,
                        arcomplex<double> *workl, ARint *lworkl,
                        double *rwork, ARint *info);
 
-  void F77NAME(zneupd)(ARlogical *rvec, char *HowMny, ARlogical *select,
+  void ZNEUPD_MACRO_(ARlogical *rvec, char *HowMny, ARlogical *select,
                        arcomplex<double> *d, arcomplex<double> *Z, ARint *ldz,
                        arcomplex<double> *sigma, arcomplex<double> *workev,
                        char *bmat, ARint *n, const char *which, ARint *nev,

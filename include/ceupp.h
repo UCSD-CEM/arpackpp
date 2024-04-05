@@ -177,7 +177,7 @@ inline void ceupp(bool rvec, char HowMny, arcomplex<double> d[],
   iselect = new ARlogical[ncv];
   iZ = (Z == NULL) ? &V[1] : Z;
 
-  F77NAME(zneupd)(&irvec, &HowMny, iselect, d, iZ, &ldz, &sigma,
+  ZNEUPD_MACRO_(&irvec, &HowMny, iselect, d, iZ, &ldz, &sigma,
                   &workev[1], &bmat, &n, which.c_str(), &nev, &tol, resid,
                   &ncv, &V[1], &ldv, &iparam[1], &ipntr[1],
                   &workd[1], &workl[1], &lworkl, &rwork[1], &info);

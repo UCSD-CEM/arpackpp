@@ -286,7 +286,7 @@ inline void caupp(ARint& ido, char bmat, ARint n, const std::string& which, ARin
 
 {
 
-  F77NAME(znaupd)(&ido, &bmat, &n, which.c_str(), &nev, &tol, resid, &ncv,
+  ZNAUPD_MACRO_(&ido, &bmat, &n, which.c_str(), &nev, &tol, resid, &ncv,
                   &V[1], &ldv, &iparam[1], &ipntr[1], &workd[1],
                   &workl[1], &lworkl, &rwork[1], &info);
 

@@ -68,6 +68,17 @@
 #define F77NAME(x) x ## _
 #endif
 
+// Windows ifx has different name mangling rule.
+#if defined(WIN32) || defined(WIN64)
+DEBUG_MACRO_ = DEBUG
+ZNAUPD_MACRO_ = ZNAUPD
+ZNEUPD_MACRO_ = ZNEUPD
+#else
+DEBUG_MACRO_ = debug_
+ZNAUPD_MACRO_ = znaupd_
+ZNEUPD_MACRO_ = zneupd_
+#endif
+
 #if defined(SGI) && !defined(SGI_DEC)
 #define SGI_DEC
 

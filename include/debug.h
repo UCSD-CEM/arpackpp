@@ -29,30 +29,30 @@ inline void TraceOff()
 
 {
 
-  F77NAME(debug).logfil = 6;
-  F77NAME(debug).ndigit = 0;
-  F77NAME(debug).mgetv0 = 0;
-  F77NAME(debug).msaupd = 0;
-  F77NAME(debug).msaup2 = 0;
-  F77NAME(debug).msaitr = 0;
-  F77NAME(debug).mseigt = 0;
-  F77NAME(debug).msapps = 0;
-  F77NAME(debug).msgets = 0;
-  F77NAME(debug).mseupd = 0;
-  F77NAME(debug).mnaupd = 0;
-  F77NAME(debug).mnaup2 = 0;
-  F77NAME(debug).mnaitr = 0;
-  F77NAME(debug).mneigt = 0;
-  F77NAME(debug).mnapps = 0;
-  F77NAME(debug).mngets = 0;
-  F77NAME(debug).mneupd = 0;
-  F77NAME(debug).mcaupd = 0;
-  F77NAME(debug).mcaup2 = 0;
-  F77NAME(debug).mcaitr = 0;
-  F77NAME(debug).mceigt = 0;
-  F77NAME(debug).mcapps = 0;
-  F77NAME(debug).mcgets = 0;
-  F77NAME(debug).mceupd = 0;
+  DEBUG_MACRO_.logfil = 6;
+  DEBUG_MACRO_.ndigit = 0;
+  DEBUG_MACRO_.mgetv0 = 0;
+  DEBUG_MACRO_.msaupd = 0;
+  DEBUG_MACRO_.msaup2 = 0;
+  DEBUG_MACRO_.msaitr = 0;
+  DEBUG_MACRO_.mseigt = 0;
+  DEBUG_MACRO_.msapps = 0;
+  DEBUG_MACRO_.msgets = 0;
+  DEBUG_MACRO_.mseupd = 0;
+  DEBUG_MACRO_.mnaupd = 0;
+  DEBUG_MACRO_.mnaup2 = 0;
+  DEBUG_MACRO_.mnaitr = 0;
+  DEBUG_MACRO_.mneigt = 0;
+  DEBUG_MACRO_.mnapps = 0;
+  DEBUG_MACRO_.mngets = 0;
+  DEBUG_MACRO_.mneupd = 0;
+  DEBUG_MACRO_.mcaupd = 0;
+  DEBUG_MACRO_.mcaup2 = 0;
+  DEBUG_MACRO_.mcaitr = 0;
+  DEBUG_MACRO_.mceigt = 0;
+  DEBUG_MACRO_.mcapps = 0;
+  DEBUG_MACRO_.mcgets = 0;
+  DEBUG_MACRO_.mceupd = 0;
 
 } // TraceOff.
 
@@ -68,16 +68,16 @@ inline void sTraceOn(const ARint digit, const ARint getv0, const ARint aupd,
 
 {
 
-  F77NAME(debug).logfil = 6;
-  F77NAME(debug).ndigit = digit;
-  F77NAME(debug).mgetv0 = getv0;
-  F77NAME(debug).msaupd = aupd;
-  F77NAME(debug).msaup2 = aup2;
-  F77NAME(debug).msaitr = aitr;
-  F77NAME(debug).mseigt = eigt;
-  F77NAME(debug).msapps = apps;
-  F77NAME(debug).msgets = gets;
-  F77NAME(debug).mseupd = eupd;
+  DEBUG_MACRO_.logfil = 6;
+  DEBUG_MACRO_.ndigit = digit;
+  DEBUG_MACRO_.mgetv0 = getv0;
+  DEBUG_MACRO_.msaupd = aupd;
+  DEBUG_MACRO_.msaup2 = aup2;
+  DEBUG_MACRO_.msaitr = aitr;
+  DEBUG_MACRO_.mseigt = eigt;
+  DEBUG_MACRO_.msapps = apps;
+  DEBUG_MACRO_.msgets = gets;
+  DEBUG_MACRO_.mseupd = eupd;
 
 } // sTraceOn.
 
@@ -93,16 +93,16 @@ inline void nTraceOn(const ARint digit, const ARint getv0, const ARint aupd,
 
 {
 
-  F77NAME(debug).logfil = 6;
-  F77NAME(debug).ndigit = digit;
-  F77NAME(debug).mgetv0 = getv0;
-  F77NAME(debug).mnaupd = aupd;
-  F77NAME(debug).mnaup2 = aup2;
-  F77NAME(debug).mnaitr = aitr;
-  F77NAME(debug).mneigt = eigt;
-  F77NAME(debug).mnapps = apps;
-  F77NAME(debug).mngets = gets;
-  F77NAME(debug).mneupd = eupd;
+  DEBUG_MACRO_.logfil = 6;
+  DEBUG_MACRO_.ndigit = digit;
+  DEBUG_MACRO_.mgetv0 = getv0;
+  DEBUG_MACRO_.mnaupd = aupd;
+  DEBUG_MACRO_.mnaup2 = aup2;
+  DEBUG_MACRO_.mnaitr = aitr;
+  DEBUG_MACRO_.mneigt = eigt;
+  DEBUG_MACRO_.mnapps = apps;
+  DEBUG_MACRO_.mngets = gets;
+  DEBUG_MACRO_.mneupd = eupd;
 
 } // nTraceOn.
 
@@ -118,16 +118,16 @@ inline void cTraceOn(const ARint digit, const ARint getv0, const ARint aupd,
 
 {
 
-  F77NAME(debug).logfil = 6;
-  F77NAME(debug).ndigit = digit;
-  F77NAME(debug).mgetv0 = getv0;
-  F77NAME(debug).mcaupd = aupd;
-  F77NAME(debug).mcaup2 = aup2;
-  F77NAME(debug).mcaitr = aitr;
-  F77NAME(debug).mceigt = eigt;
-  F77NAME(debug).mcapps = apps;
-  F77NAME(debug).mcgets = gets;
-  F77NAME(debug).mceupd = eupd;
+  DEBUG_MACRO_.logfil = 6;
+  DEBUG_MACRO_.ndigit = digit;
+  DEBUG_MACRO_.mgetv0 = getv0;
+  DEBUG_MACRO_.mcaupd = aupd;
+  DEBUG_MACRO_.mcaup2 = aup2;
+  DEBUG_MACRO_.mcaitr = aitr;
+  DEBUG_MACRO_.mceigt = eigt;
+  DEBUG_MACRO_.mcapps = apps;
+  DEBUG_MACRO_.mcgets = gets;
+  DEBUG_MACRO_.mceupd = eupd;
 
 } // cTraceOn.
 
