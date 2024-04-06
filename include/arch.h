@@ -70,13 +70,13 @@
 
 // Windows ifx has different name mangling rule.
 #if defined(WIN32) || defined(WIN64)
-#define DEBUG_MACRO_ = DEBUG
-#define ZNAUPD_MACRO_ = ZNAUPD
-#define ZNEUPD_MACRO_ = ZNEUPD
+#define DEBUG_MACRO_ DEBUG
+#define ZNAUPD_MACRO_ ZNAUPD
+#define ZNEUPD_MACRO_ ZNEUPD
 #else
-#define DEBUG_MACRO_ = debug_
-#define ZNAUPD_MACRO_ = znaupd_
-#define ZNEUPD_MACRO_ = zneupd_
+#define DEBUG_MACRO_ debug_
+#define ZNAUPD_MACRO_ znaupd_
+#define ZNEUPD_MACRO_ zneupd_
 #endif
 
 #if defined(SGI) && !defined(SGI_DEC)
